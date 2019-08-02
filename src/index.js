@@ -96,7 +96,8 @@ const initData = () => {
                 {
                     __typename: 'book',
                     id: '6',
-                    name: 'Where will man take us',
+                    name:
+                        'Where will man take ussssssssssssssdsgfsdfadfadsfsdsfvscvsdcvdscv',
                     chapters: 13,
                     price: 260
                 }
