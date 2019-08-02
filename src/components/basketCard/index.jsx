@@ -31,19 +31,37 @@ const BasketCard = () => {
                         <ul>
                             <li>
                                 <img src={checkedLogo} alt="checked" />
-                                <span className="title">Publisher: </span>something else
+                                <span>
+                                    <strong className="title">Publisher: </strong>Random
+                                    House; 2014 edition (18 September 2018)
+                                </span>
                             </li>
                             <li>
                                 <img src={checkedLogo} alt="checked" />
-                                <span className="title">Publisher: </span>something else
+                                <span>
+                                    <strong className="title">Paperback: </strong>210
+                                    pages
+                                </span>
                             </li>
                             <li>
                                 <img src={checkedLogo} alt="checked" />
-                                <span className="title">Publisher: </span>something else
+                                <span>
+                                    <strong className="title">Language: </strong>English
+                                </span>
                             </li>
                             <li>
                                 <img src={checkedLogo} alt="checked" />
-                                <span className="title">Publisher: </span>something else
+                                <span>
+                                    <strong className="title">ISBN-10: </strong>
+                                    1039330039404
+                                </span>
+                            </li>
+                            <li>
+                                <img src={checkedLogo} alt="checked" />
+                                <span>
+                                    <strong className="title">ISBN-13: </strong>
+                                    1039330039404-134
+                                </span>
                             </li>
                         </ul>
                         <div className="basket__card-price">

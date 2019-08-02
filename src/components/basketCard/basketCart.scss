@@ -15,6 +15,9 @@
                 border-bottom: 0.05rem solid #0000002d;
                 padding: 0.8rem 0;
                 color: #00000067;
+                display: flex;
+
+                text-align: start;
 
                 &:last-child {
                     border-bottom: 0rem solid #0000002d;
@@ -40,7 +43,7 @@
 
             .price {
                 color: #19a14c;
-                font-weight: 700;
+                font-weight: bolder;
             }
 
             .cart-edit {
