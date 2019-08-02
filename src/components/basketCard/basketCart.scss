@@ -1,0 +1,83 @@
+.basket {
+    &__card {
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+        border: 0.05rem solid #00000018;
+        border-radius: 0.3rem;
+        width: 23rem;
+        padding: 0.8rem 1.3rem;
+        height: 25rem;
+
+        ul {
+            li {
+                list-style: none;
+                border-bottom: 0.05rem solid #0000002d;
+                padding: 0.8rem 0;
+                color: #00000067;
+
+                &:last-child {
+                    border-bottom: 0rem solid #0000002d;
+                }
+
+                img {
+                    display: inline-block;
+                    width: 1rem;
+                    margin-right: 0.9rem;
+                }
+
+                .title {
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: #000000;
+                }
+            }
+        }
+        &-price {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.8rem 0;
+
+            .price {
+                color: #19a14c;
+                font-weight: 700;
+            }
+
+            .cart-edit {
+                display: flex;
+                width: 37%;
+                justify-content: space-between;
+
+                button {
+                    outline: none;
+                    background: #bdd9fa;
+                    padding: 0.5rem;
+                    border: 0rem solid #ffffff;
+                    border-radius: 0.1rem;
+                    padding: 0.3rem 0.9rem;
+                    font-size: 1rem;
+                }
+                .quantity {
+                    background: #bdd9fa;
+                    padding: 0.3rem 0.9rem;
+                    border: 0rem solid #ffffff;
+                }
+            }
+        }
+        .addToCartBtn {
+            background: #2654b4;
+            padding: 1rem;
+            color: #ffffff;
+            width: 100%;
+            margin-top: auto;
+            border-radius: 0.4rem;
+            text-transform: capitalize;
+            font-weight: 500;
+
+            img {
+                height: 0.8rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+.home__hero {
+    display: flex;
+    justify-content: space-between;
+    background: #fdedd3;
+    color: #000000;
+    font-family: 'Lora', serif;
+    height: 20vw;
+    padding: 3rem 4rem;
+
+    &-section1 {
+        width: 50%;
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 100;
+            font-style: normal;
+            color: #00000093;
+        }
+    }
+    &-section2 {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+}

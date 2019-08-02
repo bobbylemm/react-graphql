@@ -1,0 +1,72 @@
+.accordion {
+    padding: 13rem 10rem 3rem 10rem;
+    display: flex;
+    justify-content: space-between;
+
+    .tabs {
+        border-radius: 8px;
+        overflow: hidden;
+        width: 45%;
+        input {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+        .tab {
+            width: 100%;
+            color: #000000;
+            overflow: hidden;
+            border-bottom: 0.04rem solid #0000002c;
+
+            &-label {
+                display: flex;
+                justify-content: space-between;
+                padding: 1.3rem;
+                background: #ffffff;
+                font-weight: bold;
+                color: #0000007a;
+                cursor: pointer;
+
+                &::after {
+                    content: '\002B';
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    text-align: center;
+                    transition: all 0.35s;
+                    color: #3391ff;
+                }
+            }
+            &-content {
+                max-height: 0;
+                padding: 0 1.3rem;
+                color: #000000;
+                background: white;
+                transition: all 0.35s;
+            }
+        }
+
+        // :checked
+        input:checked {
+            + .tab-label {
+                background: #ffffff;
+                &::after {
+                    content: '\2212';
+                    transform: rotate(180deg);
+                }
+            }
+            ~ .tab-content {
+                max-height: 100vh;
+                padding: 1em;
+            }
+        }
+    }
+
+    .accor-image {
+        width: 45%;
+
+        img {
+            width: 570px;
+            height: 370px;
+        }
+    }
+}
